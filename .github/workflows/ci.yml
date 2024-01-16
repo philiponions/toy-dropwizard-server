@@ -23,7 +23,7 @@ jobs:
           chmod +x gradlew
           ./gradlew build -x test
 
-      - name: run tests
+      - name: Run tests
         working-directory: .
         run: |
           chmod +x gradlew

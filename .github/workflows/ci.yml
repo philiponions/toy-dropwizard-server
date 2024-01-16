@@ -17,13 +17,13 @@ jobs:
         with:
           java-version: "11"
 
-      -name: Build with gradle
+      - name: Build with gradle
         working-directory: .
         run: | 
           chmod +x gradlew
           ./gradlew build -x test
 
-      -name: run tests
+      - name: run tests
         working-directory: .
         run: |
           chmod +x gradlew
